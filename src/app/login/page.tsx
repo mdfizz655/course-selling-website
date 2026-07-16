@@ -77,14 +77,14 @@ const LoginPage = () => {
                 <p className="text-[10px] font-black uppercase text-blue-200 mb-4 tracking-widest">Admin</p>
                 <div className="flex justify-between items-center text-sm font-bold">
                   <span>admin@skillup.com</span>
-                  <button onClick={() => handleDemoFill("admin@skillup.com", "admin12345", "ae")}>{copied === "ae" ? <CheckCircle2 size={18}/> : <Copy size={18}/>}</button>
+                  <button onClick={() => handleDemoFill("admin@skillup.com", "123456", "ae")}>{copied === "ae" ? <CheckCircle2 size={18}/> : <Copy size={18}/>}</button>
                 </div>
               </div>
               <div className="bg-white/10 backdrop-blur-xl p-6 rounded-3xl border border-white/20">
                 <p className="text-[10px] font-black uppercase text-blue-200 mb-4 tracking-widest">Student</p>
                 <div className="flex justify-between items-center text-sm font-bold">
                   <span>student@skillup.com</span>
-                  <button onClick={() => handleDemoFill("student@skillup.com", "user12345", "ue")}>{copied === "ue" ? <CheckCircle2 size={18}/> : <Copy size={18}/>}</button>
+                  <button onClick={() => handleDemoFill("student@skillup.com", "123456", "ue")}>{copied === "ue" ? <CheckCircle2 size={18}/> : <Copy size={18}/>}</button>
                 </div>
               </div>
             </div>
