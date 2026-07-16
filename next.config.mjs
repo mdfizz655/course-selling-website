@@ -1,14 +1,9 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: '**',
-      },
-    ],
+/** @type {import('postcss-load-config').Config} */
+const config = {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
   },
-  // পেমেন্ট বা অথেনটিকেশনের জন্য যদি অতিরিক্ত কনফিগ লাগে এখানে আসবে
 };
 
-export default nextConfig;
+export default config;
