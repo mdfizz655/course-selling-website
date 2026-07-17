@@ -12,8 +12,8 @@ const ExploreCourses = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [category, setCategory] = useState("All");
   
-  const API_URL = "http://localhost:5001/api/courses";
-
+ // আগের লাইনটি মুছে এটি দিন
+const API_URL = process.env.NEXT_PUBLIC_API_URL ? `${process.env.NEXT_PUBLIC_API_URL}/courses` : "http://localhost:5001/api/courses";
   useEffect(() => {
     const fetchAllCourses = async () => {
       try {

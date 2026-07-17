@@ -9,7 +9,8 @@ import Link from 'next/link';
 
 export default function Home() {
   const [courses, setCourses] = useState<any[]>([]);
-  const API_URL = "http://localhost:5001/api/courses";
+  // আগের লাইনটি মুছে এটি দিন
+const API_URL = process.env.NEXT_PUBLIC_API_URL ? `${process.env.NEXT_PUBLIC_API_URL}/courses` : "http://localhost:5001/api/courses";
 
   useEffect(() => {
     const fetchFeaturedCourses = async () => {
