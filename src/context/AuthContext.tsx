@@ -24,7 +24,7 @@ interface AuthContextType {
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 // ব্যাকএন্ড এপিআই ইউআরএল (Port 5001)
-const API_URL = "http://localhost:5001/api";
+const API_URL = "https://course-selling-server-gyxb.onrender.com";
 
 export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
   const [user, setUser] = useState<User | null>(null);
